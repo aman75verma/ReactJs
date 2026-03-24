@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//creating my own component
+//creating my own component 
 function MyButton() {
   return <div>this is my button</div>
 }
