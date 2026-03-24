@@ -1,0 +1,19 @@
+l-1 introduction
+l-2 react folder structure
+
+npx create-react-app@latest my_app
+react -- next
+      -- gestify
+      -- remix
+      --expo --- react-native
+
+
+
+1. Public Folder
+   can directly access the files there
+   eg. localhost:3000/favicon.ico
+   main executing file: index.html
+
+2. src (Source Code) --most of work done here
+   index.js -- accessing an id"root" and injecting app.js component in injecting
+   app.js -- main react app --- injected in "root" -- called by index.html public 
