@@ -1,0 +1,9 @@
+a simple addition function for numerics can append strings
+java script 
+    -- loosely type language
+    -- cannot access methods for eg for numerics inside a function as theres no surity by func
+    --we have to communicate with team about args and ops
+
+problem solved by tsx
+
+components__ modularity 
