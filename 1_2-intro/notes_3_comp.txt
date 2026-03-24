@@ -1,0 +1,12 @@
+just a function block in our UI which we are going to render
+starts from capital letter
+regular java script function
+
+can render a component multiple times
+nesting is there but not but advised
+
+good practice
+  - make a folder of components
+  - make any comp 
+     - import it in App.js (recommended)
+     - import it in index.js (not recommended)

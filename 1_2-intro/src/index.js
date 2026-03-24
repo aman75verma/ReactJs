@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//creating my own component
+function MyButton() {
+  return <div>this is my button</div>
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <MyButton /> 
     <App />
   </React.StrictMode>
 );
