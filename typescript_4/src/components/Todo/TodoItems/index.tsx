@@ -1,12 +1,16 @@
 import React from 'react';
 import './style.css';
-const TodoItem : React.FC = () => {
+interface userInfo{
+    name : string;
+    active : boolean;
+}
+const TodoItem : React.FC<userInfo> = ({name , active}) => {
     return (
-        <li>
-            Code
-        </li>
+        <>
+        <li>{name}</li>
+        <li>{active ? 'Active' : 'Inactive'}</li>
+        </>
     )
-
 };
 
 export default TodoItem;

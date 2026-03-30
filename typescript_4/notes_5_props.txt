@@ -1,0 +1,15 @@
+inputs passed from the parent component to the child component (top to down data flow)
+dynamic and reusable
+immutable
+
+Props
+  ---Props are like function arguments.
+  ---They are read-only (immutable) inside the child component.
+  ---Used to pass data and behavior (functions).
+
+
+Flow in our code:
+index.tsx -> App.tsx -> Todo(index.tsx) -> TodoItems(index.tsx)
+                        passing title to -> TodoItems(dynamically rendering)
+
+             

@@ -1,0 +1,32 @@
+npm create vite@latest 
+
+A bundler is a tool that:
+     ----Takes multiple files (JS, CSS, images, modules)
+     ----Resolves dependencies (import/export)
+     ----Combines + optimizes them into few eficient files for the browser
+     ----Bundler converts everything into browser-ready optimized assets
+
+
+⚙️ What bundlers actually do
+Dependency graph building
+Transpilation (TS → JS, JSX → JS via Babel/SWC)
+Minification (remove whitespace, shorten vars)
+Tree shaking (remove unused code)
+Code splitting (lazy loading chunks)
+Asset handling (images, CSS, fonts)     
+
+
+
+Vite
+   --Not bundles everything during dev
+   -- GoBased Bundles only for production using rollUp
+   -- Extremely Fast
+
+Parcel
+   --Plug n Play
+   --Automatic Bundles everything
+   -- No Config Reqd
+
+CRA 
+   --Uses Webpack under the hood
+   --Fully pre-configured React setup

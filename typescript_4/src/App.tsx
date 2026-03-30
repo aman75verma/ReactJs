@@ -1,17 +1,34 @@
-//todo application
+//user active application 
 
-import React from "react";
+import React, { Activity } from "react";
 import Todo from "./components/Todo/index";
+const myuser = [
+  {
+  name : "Aman",
+  active : true
+  },
 
+  {
+    name : "Kapil",
+    active : false
+  }
+]
 const App: React.FC = () => {
   return (
-    <>
-      <Todo/>
-      <h1>Hello from App</h1>
-      <Todo/>
-      <h1>Hello from App</h1>
-      <Todo/>
-    </>
+    <div style = {{border: '1px solid red'}} onClick={e => alert('clicked')}> 
+      {/* <Todo items={  [{} , {} < {}]  }/> we can pass arrays of object */}
+      {/* <Todo items={myuser}/> */}
+      <Todo items = {[
+        {
+          name: "Aman" ,
+          active : false
+        } ,
+        {
+          name: "Anant" ,
+          active : true
+        }  
+        ]} />
+    </div>
   );
 };
 
