@@ -1,0 +1,33 @@
+normal variable cant persist values in react :
+1. Local variables don’t persist between renders. When React renders this component a second time, it renders it from scratch—it doesn’t consider any changes to the local variables.
+2. Changes to local variables won’t trigger renders. React doesn’t realize it needs to render the component again with the new data.
+
+useState Hook:
+1. A state variable to retain data bw renders
+2. A state setter function to update variable and trigger a react render.
+
+
+what are hooks?
+1. hooks are the special function in react that are only available during rendering and allows features like
+state
+lifecycle methods
+context inside functional component
+
+2. Stable Call Order: Hooks must be called in the exact same order on every single render.
+
+3. Top-Level Only: Always call Hooks at the top level of your React function, before any early returns or conditional logic.
+
+4. The Workaround: If you need a Hook to depend on a condition, put the condition inside the Hook:
+
+5. if some two state variables always change together, it might be a good idea to unify them into a single state variable.
+
+6. State is local (isolated and private one state -- one comp).
+
+before hooks --- class component
+reduces complexity , adds reusability and problems of this keyword
+
+
+what is state btw:
+components need to remember thing for eg
+scrolling flipkart and products in cart
+using insta and no of dms

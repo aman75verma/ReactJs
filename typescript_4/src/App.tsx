@@ -2,6 +2,7 @@
 
 import React, { Activity } from "react";
 import Todo from "./components/Todo/index";
+import Counter from "./components/Counter";
 const myuser = [
   {
   name : "Aman",
@@ -15,6 +16,7 @@ const myuser = [
 ]
 const App: React.FC = () => {
   return (
+    <div>
     <div style = {{border: '1px solid red'}} onClick={e => alert('clicked')}> 
       {/* <Todo items={  [{} , {} < {}]  }/> we can pass arrays of object */}
       {/* <Todo items={myuser}/> */}
@@ -28,6 +30,9 @@ const App: React.FC = () => {
           active : true
         }  
         ]} />
+    </div>
+      <Counter></Counter>
+
     </div>
   );
 };
