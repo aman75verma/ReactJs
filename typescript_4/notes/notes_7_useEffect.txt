@@ -1,0 +1,5 @@
+LifeCycle 
+Init --- mount --- update --- unmount ---Init
+
+useState works during update
+UseEffect works during mount by default

@@ -1,9 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import "./style.css";
 
 const Counter: React.FC = () => {
     const [counter, setCounter] = useState<number>(0);
     const [name, setName] = useState<string>("");
+
+    useEffect(()=> {
+        console.log("Mounted") //dependency -- mounting only
+
+        return function(){
+            console.log("Counter Unmounted") //dependency -- unounting
+
+        }
+    } , []) 
+
+    useEffect(()=> {
+        console.log("Name Updated")
+    } , [name]) //dependency -- name update
+
+    useEffect(()=> {
+        console.log("Counter Updated")
+    } , [counter]) //dependency -- counter update
+
 
     const handleIncrement = () => {
         setCounter(prev => prev + 1);

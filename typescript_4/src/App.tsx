@@ -1,6 +1,7 @@
 //user active application 
 
-import React, { Activity } from "react";
+import React from "react";
+import { useState } from "react";
 import Todo from "./components/Todo/index";
 import Counter from "./components/Counter";
 const myuser = [
@@ -15,6 +16,7 @@ const myuser = [
   }
 ]
 const App: React.FC = () => {
+  const [state , setState] = useState<boolean>(true)
   return (
     <div>
     <div style = {{border: '1px solid red'}} onClick={e => alert('clicked')}> 
@@ -31,7 +33,8 @@ const App: React.FC = () => {
         }  
         ]} />
     </div>
-      <Counter></Counter>
+    <button onClick={(e) => setState(!state) }>Toggle</button>
+      {state ? <Counter/> : ""}
 
     </div>
   );
