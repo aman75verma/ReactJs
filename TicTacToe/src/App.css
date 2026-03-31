@@ -1,0 +1,22 @@
+.block{
+  border: 2px solid;
+  height: 100px;
+  width:100px;
+  cursor:pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.row{
+  display: flex;
+}
+
+.board{
+  padding: 100px;
+  margin: 100px;
+}
